@@ -1,7 +1,0 @@
-POST http://localhost:3001/notas/nota
-content-type: "application/json"
-
-{
-    "content": "sal porfa",
-    "descrip": "que te pasa"
-}
