@@ -33,15 +33,18 @@ app.post('/notas/nota',(req,res)=>{
     
     const newNota = {
         id:  idMax + 1,
-        content: a.content,
-        descript: a.descript,
+        content: a.title,
+        descript: a.desc,
     }
-    console.log(a)
     res.json(newNota)
     Notas = [...Notas,newNota]
-    
 })
 
+app.delete('/notas/nota/:id',(req,res) => {
+    const id = Number(req.params.id)
+    Notas = Notas.filter(Notas => Notas.id !== id)
+    res.json(Notas)
+})
 const port = 3001
 app.listen(port,() =>{
     console.log(`La pagina web se esta generando en el port ${port}`)
