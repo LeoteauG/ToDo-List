@@ -12,24 +12,23 @@
         <div class="grid grid-cols-2 gap-4 place-content-center">
             <div class=" grid bg-red-200 ml-10 place-content-center pb-5 pt-3">
                 <h1 class="text-center">Inserte Tarea</h1>
+                <form >
                 <label for="titulo">Titulo</label>
-                <input type="text" name="" id="titulo" placeholder="Escribe aquí...">
+                <input type="text" name="" id="titulo" placeholder="Escribe aquí..." class="title">
                 <br>
                 <label for="desc">Descripción</label>
-                <textarea name="" id="desc" cols="30" rows="10" placeholder="Coloca tu descripción aquí.."></textarea>
+                <textarea id="desc" cols="30" rows="10" placeholder="Coloca tu descripción aquí.." class="desc"></textarea>
                 <br>
-                <button class="bg-green-400">Enviar</button>
+                <button class="bg-green-400 btn">Enviar</button>
+                </form>
             </div>
             <div class="bg-blue-200 pt-3">
                 <h1 class="text-center">Lista de Tareas</h1>
                 <ul class="taskList">
-
                 </ul>
             </div>
         </div>
     </div>
-    
-
-    
+    <script src="../../Back-End/src/index2.js"></script>
 </body>
 </html>
