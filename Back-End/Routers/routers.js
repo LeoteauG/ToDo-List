@@ -41,9 +41,9 @@ app.post('/notas/nota',express.urlencoded({extended:false}),(req,res)=>{
     res.status(201)
 })
 
-app.delete('/notas/nota/:id',(req,res) => {
-        const id = Number(req.params.id)
-        Notas = Notas.filter(Notas => Notas.id !== id)
+app.delete('/notas/nota/:title',(req,res) => {
+        const title = req.params.title
+        Notas = Notas.filter(Notas => Notas.content !== title)
         res.json(Notas)
     })
 
