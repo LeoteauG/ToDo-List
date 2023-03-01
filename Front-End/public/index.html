@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Front-End/dist/output.css">
+</head>
+<body>
+    <div class="grid grid-cols-2 w-3/4 m-auto gap-4 mt-8">
+        <div class="grid grid-cols-1 gap-2 h-max">
+            <div class="grid bg-red-200 gap-2 p-6 rounded-md h-max">
+            <h1 class="text-center text-2xl">Inserte Tarea</h1>
+                <form class="grid">
+                    <label for="titulo">Titulo</label>
+                    <input  class="title rounded-md p-2" id="titulo" name = "titulo"  type="text"  placeholder="Escribe aquí..." >
+                    <br>
+                    <label for="descrip">Descripción</label>
+                    <input class="desc rounded-md p-2" id="descrip" name = "descrip" placeholder="Coloca tu descripción aquí.." ></input>
+                    <br>
+                    <button type="button" class="bg-green-400 btn w-1/6 place-self-end rounded-md p-1 border-solid border-black border-2" >Enviar</button>
+                </form>
+            </div>
+            <div class="grid bg-red-200 gap-2 p-6 rounded-md">
+                <h1 class="text-center text-2xl">Eliminar Tarea</h1>
+                <form class="grid">
+                    <label for="titulo">Titulo</label>
+                    <input class="titleDelete rounded-md p-2" id="titulo" name = "titulo" type="text"  placeholder="Escribe aquí..." >
+                    <br>
+                    <button type="button" class="bg-red-600 btnDelete w-1/6 place-self-end rounded-md p-1 border-solid border-black border-2" >Eliminar</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="pt-3 bg-blue-200 rounded-md">
+            <h1 class="text-center text-2xl">Lista de Tareas</h1>
+            <ul class="taskList grid gap-4">  
+            </ul>
+        </div>
+    </div>
+    <script src="../../Front-End/src/index.js"></script>
+</body>
+</html>
