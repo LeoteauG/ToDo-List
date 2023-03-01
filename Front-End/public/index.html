@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../../Front-End/dist/output.css">
 </head>
 <body>
-    <div class="grid grid-cols-2 w-3/4 m-auto gap-4 mt-8">
+    <div class="grid grid-cols-2 w-3/4 m-auto gap-2 mt-8">
         <div class="grid grid-cols-1 gap-2 h-max">
-            <div class="grid bg-red-200 gap-2 p-6 rounded-md h-max">
+            <div class="grid bg-red-200 gap-2 p-6 rounded-md h-max border-solid border-black border-2">
             <h1 class="text-center text-2xl">Inserte Tarea</h1>
                 <form class="grid">
                     <label for="titulo">Titulo</label>
@@ -22,20 +22,20 @@
                     <button type="button" class="bg-green-400 btn w-1/6 place-self-end rounded-md p-1 border-solid border-black border-2" >Enviar</button>
                 </form>
             </div>
-            <div class="grid bg-red-200 gap-2 p-6 rounded-md">
+            <div class="grid bg-gray-400 gap-2 p-6 rounded-md border-solid border-black border-2">
                 <h1 class="text-center text-2xl">Eliminar Tarea</h1>
                 <form class="grid">
                     <label for="titulo">Titulo</label>
-                    <input class="titleDelete rounded-md p-2" id="titulo" name = "titulo" type="text"  placeholder="Escribe aquí..." >
+                    <input class="titleDelete rounded-md p-2" id="tituloDelete" name = "titulo" type="text"  placeholder="Escribe aquí..." >
                     <br>
                     <button type="button" class="bg-red-600 btnDelete w-1/6 place-self-end rounded-md p-1 border-solid border-black border-2" >Eliminar</button>
                 </form>
             </div>
         </div>
         
-        <div class="pt-3 bg-blue-200 rounded-md">
+        <div class="pt-3 bg-blue-200 rounded-md border-solid border-black border-2">
             <h1 class="text-center text-2xl">Lista de Tareas</h1>
-            <ul class="taskList grid gap-4">  
+            <ul class="taskList grid gap-4 mt-5">  
             </ul>
         </div>
     </div>
