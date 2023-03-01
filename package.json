@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build-css": "tailwindcss -i Front-End/public/input.css -o Front-End/dist/output.css --watch",
     "start": "nodemon Back-End/src/index.js"
   },
   "keywords": [],
@@ -14,6 +15,16 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "nodemon": "2.0.20"
+    "nodemon": "2.0.20",
+    "standard": "^17.0.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
